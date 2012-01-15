@@ -9,7 +9,24 @@
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="If you&#8217;re receiving this message, when trying to install Adobe Air on OS X: You&#8217;ll need to disable automatic graphics switching in the &hellip;">
+  <meta name="description" content="If you&#8217;re receiving an error similar like this 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+[~/Documents/alexzeitler.com]$ rake generate [source][ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +81,94 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/">Rake Generate for Octopress Fails With Invalid Byte Sequence in US-ASCII (ArgumentError)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-15T23:53:00+01:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you&#8217;re receiving an error similar like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[~/Documents/alexzeitler.com]$ rake generate         [source][ruby-1.9.2-p290] 
+</span><span class='line'>## Generating Site with Jekyll
+</span><span class='line'>unchanged sass/screen.scss
+</span><span class='line'>Configuration from /Users/alex/Documents/alexzeitler.com/_config.yml
+</span><span class='line'>Building site: source -&gt; public
+</span><span class='line'>/Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/convertible.rb:29:in `read_yaml': invalid byte sequence in US-ASCII (ArgumentError)
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/post.rb:39:in `initialize'
+</span><span class='line'>  from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:23:in `new'
+</span><span class='line'>  from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:23:in `block in read_posts'
+</span><span class='line'>  from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:21:in `each'
+</span><span class='line'>  from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:21:in `read_posts'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:128:in `read_directories'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:98:in `read'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:38:in `process'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/bin/jekyll:250:in `&lt;top (required)&gt;'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `load'
+</span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>when running</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>for octopress, add this to your .profile or .zshrc etc.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>LANG=en_US.UTF-8
+</span><span class='line'>LC_ALL=en_US.UTF-8</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -250,6 +355,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/">rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError) </a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/">This application requires a version of Adobe AIR which cannot be found</a>

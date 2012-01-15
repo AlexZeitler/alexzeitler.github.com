@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Alex Zeitler]]></title>
+  <link href="http://AlexZeitler.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://AlexZeitler.com/"/>
+  <updated>2012-01-15T23:57:14+01:00</updated>
+  <id>http://AlexZeitler.com/</id>
+  <author>
+    <name><![CDATA[Alex Zeitler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError) ]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/"/>
+    <updated>2012-01-15T23:53:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror</id>
+    <content type="html"><![CDATA[<p>If you're receiving an error similar like this
+```
+[~/Documents/alexzeitler.com]$ rake generate         [source][ruby-1.9.2-p290]</p>
+
+<h2>Generating Site with Jekyll</h2>
+
+<p>unchanged sass/screen.scss
+Configuration from /Users/alex/Documents/alexzeitler.com/_config.yml
+Building site: source -> public
+/Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/convertible.rb:29:in `read_yaml': invalid byte sequence in US-ASCII (ArgumentError)</p>
+
+<pre><code>from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/post.rb:39:in `initialize'
+from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:23:in `new'
+from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:23:in `block in read_posts'
+from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:21:in `each'
+from /Users/alex/Documents/alexzeitler.com/plugins/preview_unpublished.rb:21:in `read_posts'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:128:in `read_directories'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:98:in `read'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/lib/jekyll/site.rb:38:in `process'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/gems/jekyll-0.11.0/bin/jekyll:250:in `&lt;top (required)&gt;'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `load'
+from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `&lt;main&gt;'
+</code></pre>
+
+<p>```</p>
+
+<p>when running</p>
+
+<p><code>
+rake generate
+</code></p>
+
+<p>for octopress, add this to your .profile or .zshrc etc.</p>
+
+<p><code>
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
