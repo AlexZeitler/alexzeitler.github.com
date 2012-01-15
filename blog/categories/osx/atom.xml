@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: osx | Alex Zeitler]]></title>
+  <link href="http://AlexZeitler.com/blog/categories/osx/atom.xml" rel="self"/>
+  <link href="http://AlexZeitler.com/"/>
+  <updated>2012-01-15T23:02:15+01:00</updated>
+  <id>http://AlexZeitler.com/</id>
+  <author>
+    <name><![CDATA[Alex Zeitler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[This application requires a version of Adobe AIR which cannot be found]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/"/>
+    <updated>2012-01-15T22:57:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found</id>
+    <content type="html"><![CDATA[<p>If you're receiving this message, when trying to install Adobe Air on OS X:</p>
+
+<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/applicationrequiresaversionofadobeair.png" alt="image" /></p>
+
+<p>You'll need to disable automatic graphics switching in the Energy Saver settings:</p>
+
+<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/automaticgraphicsswitchingoff.png" alt="image" /></p>
+
+<p>If you experience problems with an Air based application (like Balsamiq Mockups) during runtime, you should also try this...</p>
+]]></content>
+  </entry>
+  
+</feed>
