@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Permission denied (publickey) when trying to access repository on GitHub - Alex Zeitler</title>
+  <title>This application requires a version of Adobe AIR which cannot be found - Alex Zeitler</title>
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="If you already own a GitHub account and try to clone from or push to a repository on GitHub you may receive a 1
-Permission denied (publickey) error. &hellip;">
+  <meta name="description" content="If you&#8217;re receiving this message, when trying to install Adobe Air on OS X: You&#8217;ll need to disable automatic graphics switching in the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Permission denied (publickey) error. &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github">
+  <link rel="canonical" href="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +67,7 @@ Permission denied (publickey) error. &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Permission Denied (Publickey) When Trying to Access Repository on GitHub</h1>
+      <h1 class="entry-title">This Application Requires a Version of Adobe AIR Which Cannot Be Found</h1>
     
     
       <p class="meta">
@@ -84,52 +83,22 @@ Permission denied (publickey) error. &hellip;">
   
 
 
-<time datetime="2012-01-13T18:10:00+01:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+<time datetime="2012-01-15T22:57:00+01:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>If you already own a GitHub account and try to clone from or push to a repository on GitHub you may receive a</p>
+<div class="entry-content"><p>If you&#8217;re receiving this message, when trying to install Adobe Air on OS X:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Permission denied (publickey)</span></code></pre></td></tr></table></div></figure>
+<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/applicationrequiresaversionofadobeair.png" alt="image" /></p>
 
+<p>You&#8217;ll need to disable automatic graphics switching in the Energy Saver settings:</p>
 
-<p>error.</p>
+<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/automaticgraphicsswitchingoff.png" alt="image" /></p>
 
-<p>This may be the case if you have set up a new machine without having installed your existing ssh key properly.</p>
-
-<p>To do so, just copy your private key to your ~/.ssh directory and call:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/id_rsa</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>whereas id_rsa is the name of your ssh key.</p>
-
-<p>Another reason why you fail, may be a missing .config file in your ~/.ssh folder.</p>
-
-<p>If this is the case, just create it and paste the following into it:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
-</span><span class='line'>  User git
-</span><span class='line'>  Port 22
-</span><span class='line'>  Hostname github.com
-</span><span class='line'>  IdentityFile ~/.ssh/id_rsa
-</span><span class='line'>  TCPKeepAlive yes
-</span><span class='line'>  IdentitiesOnly yes</span></code></pre></td></tr></table></div></figure>
-
+<p>If you experience problems with an Air based application (like Balsamiq Mockups) during runtime, you should try this also…</p>
 </div>
 
 
@@ -152,12 +121,12 @@ Permission denied (publickey) error. &hellip;">
   
 
 
-<time datetime="2012-01-13T18:10:00+01:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+<time datetime="2012-01-15T22:57:00+01:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/ssh/'>ssh</a>
+    <a class='category' href='/blog/categories/air/'>air</a>, <a class='category' href='/blog/categories/osx/'>osx</a>
   
 </span>
 
@@ -166,7 +135,7 @@ Permission denied (publickey) error. &hellip;">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/" data-via="AlexZeitler" data-counturl="http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/" data-via="AlexZeitler" data-counturl="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/" >Tweet</a>
   
   
   
@@ -175,10 +144,8 @@ Permission denied (publickey) error. &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/01/12/hello-from-a-new-world/" title="Previous Post: Hello (from a new) World">&laquo; Hello (from a new) World</a>
+        <a class="basic-alignment left" href="/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/" title="Previous Post: Permission denied (publickey) when trying to access repository on GitHub">&laquo; Permission denied (publickey) when trying to access repository on GitHub</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/" title="next Post: This application requires a version of Adobe AIR which cannot be found">This application requires a version of Adobe AIR which cannot be found &raquo;</a>
       
     </p>
   </footer>
