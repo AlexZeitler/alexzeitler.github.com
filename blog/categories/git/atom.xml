@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Alex Zeitler]]></title>
+  <link href="http://AlexZeitler.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://AlexZeitler.com/"/>
+  <updated>2012-01-15T23:29:24+01:00</updated>
+  <id>http://AlexZeitler.com/</id>
+  <author>
+    <name><![CDATA[Alex Zeitler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Permission denied (publickey) when trying to access repository on GitHub]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/"/>
+    <updated>2012-01-13T18:10:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github</id>
+    <content type="html"><![CDATA[<p>If you already own a GitHub account and try to clone from or push to a repository on GitHub you may receive a</p>
+
+<p><code>
+Permission denied (publickey)
+</code></p>
+
+<p>error.</p>
+
+<p>This may be the case if you have set up a new machine without having installed your existing ssh key properly.</p>
+
+<p>To do so, just copy your private key to your ~/.ssh directory and call:</p>
+
+<p><code>
+$ ssh-add ~/.ssh/id_rsa
+</code></p>
+
+<p>whereas id_rsa is the name of your ssh key.</p>
+
+<p>Another reason why you fail, may be a missing .config file in your ~/.ssh folder.</p>
+
+<p>If this is the case, just create it and paste the following into it:</p>
+
+<p><code>
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  IdentityFile ~/.ssh/id_rsa
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
