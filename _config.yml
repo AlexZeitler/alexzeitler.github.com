@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://AlexZeitler.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://AlexZeitler.com
+title: Alex Zeitler
+subtitle: No more leaky abstractions.
+author: Alex Zeitler
 simple_search: http://google.com/search
 description:
 
