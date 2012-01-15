@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-01-15T22:40:33+01:00</updated>
+  <updated>2012-01-15T22:42:55+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -12,5 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Permission denied (publickey) when trying to access repository on GitHub]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/"/>
+    <updated>2012-01-13T18:10:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github</id>
+    <content type="html"><![CDATA[<p>If you already own a GitHub account and try to clone from or push to a repository on GitHub you may receive a</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Permission denied (publickey)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>error.</p>
+
+<p>This may be the case if you have set up a new machine without having installed your existing ssh key properly.</p>
+
+<p>To do so, just copy your private key to your ~/.ssh directory and call:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/id_rsa</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>whereas id_rsa is the name of your ssh key.</p>
+
+<p>Another reason why you fail, may be a missing .config file in your ~/.ssh folder.</p>
+
+<p>If this is the case, just create it and paste the following into it:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
+</span><span class='line'>  User git
+</span><span class='line'>  Port 22
+</span><span class='line'>  Hostname github.com
+</span><span class='line'>  IdentityFile ~/.ssh/id_rsa
+</span><span class='line'>  TCPKeepAlive yes
+</span><span class='line'>  IdentitiesOnly yes</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello (from a new) World]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/01/12/hello-from-a-new-world/"/>
+    <updated>2012-01-12T19:24:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/01/12/hello-from-a-new-world</id>
+    <content type="html"><![CDATA[<h2>Yet another blog?</h2>
+
+<p>If you know my blog <a href="http://blog.alexonasp.net">Alex on ASP.NET</a>, you may ask why I started blogging on another Url and a different <a href="http://www.octopress.org">blog engine</a>?</p>
+
+<p>As you may have noticed on <a href="http://twitter.com/AlexZeitler">Twitter</a>, besides ASP.NET MVC and WCF Web API, I started developing mobile-first and single page web applications using HTML5, CSS3 and Javascript a few month ago.</p>
+
+<p>Most of the Javascript and CSS3 frameworks (not least node.js) have their background in the OSS community which is mainly focused on Linux and OS X.</p>
+
+<p>To have that technology stack available just in time (and sadly often long before being available on the Windows stack) for my <a href="http://pdmlab.com">daily work</a>, I decided to step out of the comfort zone / think outside the box (name it whatever you want) and use both platforms on a daily basis also.</p>
+
+<h2>What to expect?</h2>
+
+<p>As I&#8217;m pretty new to both OS X and Linux, I&#8217;ll post about my experiences during my way to the &#8220;x world&#8221; (not least as a documentation for myself if I forgot about something I already solved).</p>
+
+<p>That means I&#8217;ll document which languages, tools and frameworks I&#8217;ll use, what I (dis)like on the &#8220;new&#8221; platforms etc.</p>
+
+<h2>Will you leave .NET / the Microsoft stack?</h2>
+
+<p>Short answer: No.</p>
+
+<p>Long answer: World is changing fast and a developers (geeks) world even faster and as much as I like ASP.NET MVC and Web API: it&#8217;s simply on the server side and much things nowadays happen solely on the client (read: client == browser != classic desktop).</p>
+]]></content>
+  </entry>
   
 </feed>
