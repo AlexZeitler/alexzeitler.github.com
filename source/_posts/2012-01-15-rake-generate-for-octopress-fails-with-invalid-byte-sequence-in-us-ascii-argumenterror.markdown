@@ -5,7 +5,7 @@ date: 2012-01-15 23:53
 comments: true
 categories: [rake,octopress]
 ---
-If you're receiving an error similar like this
+If you're receiving an error similar to this
 ```
 [~/Documents/alexzeitler.com]$ rake generate         [source][ruby-1.9.2-p290] 
 ## Generating Site with Jekyll
