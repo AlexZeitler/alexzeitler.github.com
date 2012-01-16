@@ -14,7 +14,7 @@ Most of the Javascript and CSS3 frameworks (not least node.js) have their backgr
 
 To have that technology stack available just in time (and sadly often long before being available on the Windows stack) for my [daily work](http://pdmlab.com), I decided to step out of the comfort zone / think outside the box (name it whatever you want) and use both platforms on a daily basis also.
 ##What to expect?
-As I'm pretty new to both OS X and Linux, I'll post about my experiences during my way to the "x world" (not least as a documentation for myself if I forgot about something I already solved).
+As I'm pretty new to both OS X and Linux (read: Ubuntu), I'll post about my experiences during my way to the "x world" (not least as a documentation for myself if I forgot about something I already solved).
 
 That means I'll document which languages, tools and frameworks I'll use, what I (dis)like on the "new" platforms etc. 
 
