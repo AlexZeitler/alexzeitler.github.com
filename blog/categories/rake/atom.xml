@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rake | Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/blog/categories/rake/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-01-16T10:54:39+01:00</updated>
+  <updated>2012-01-16T10:58:59+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -18,7 +18,7 @@
     <link href="http://AlexZeitler.com/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/"/>
     <updated>2012-01-15T23:53:00+01:00</updated>
     <id>http://AlexZeitler.com/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror</id>
-    <content type="html"><![CDATA[<p>If you're receiving an error similar like this
+    <content type="html"><![CDATA[<p>If you're receiving an error similar to this
 ```
 [~/Documents/alexzeitler.com]$ rake generate         [source][ruby-1.9.2-p290]</p>
 
