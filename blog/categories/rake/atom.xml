@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rake | Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/blog/categories/rake/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-01-17T00:33:50+01:00</updated>
+  <updated>2012-01-17T12:45:22+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -44,13 +44,7 @@ from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `&lt;main&gt;'
 
 <p>```</p>
 
-<p>when running</p>
-
-<p><code>
-rake generate
-</code></p>
-
-<p>for octopress, add this to your .profile or .zshrc etc.</p>
+<p>when running <code>rake generate</code> for octopress, add this to your <code>.profile</code> or <code>.zshrc</code> etc.</p>
 
 <p><code>
 LANG=en_US.UTF-8

@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-01-17T00:33:50+01:00</updated>
+  <updated>2012-01-17T12:45:22+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -56,13 +56,7 @@
 </span><span class='line'>  from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure>
 
 
-<p>when running</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
-
-
-<p>for octopress, add this to your .profile or .zshrc etc.</p>
+<p>when running <code>rake generate</code> for octopress, add this to your <code>.profile</code> or <code>.zshrc</code> etc.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -106,7 +100,7 @@
 
 <p>This may be the case if you have set up a new machine without having installed your existing ssh key properly.</p>
 
-<p>To do so, just copy your private key to your ~/.ssh directory and call:</p>
+<p>To do so, just copy your private key to your <code>~/.ssh</code> directory and call:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/id_rsa</span></code></pre></td></tr></table></div></figure>
@@ -114,9 +108,9 @@
 
 <p></p>
 
-<p>whereas id_rsa is the name of your ssh key.</p>
+<p>whereas <code>id_rsa</code> is the name of your ssh key.</p>
 
-<p>Another reason why you fail, may be a missing .config file in your ~/.ssh folder.</p>
+<p>Another reason why you fail, may be a missing <code>.config</code> file in your <code>~/.ssh</code> folder.</p>
 
 <p>If this is the case, just create it and paste the following into it:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ssh | Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/blog/categories/ssh/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-01-17T00:33:50+01:00</updated>
+  <updated>2012-01-17T12:45:22+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -28,15 +28,15 @@ Permission denied (publickey)
 
 <p>This may be the case if you have set up a new machine without having installed your existing ssh key properly.</p>
 
-<p>To do so, just copy your private key to your ~/.ssh directory and call:</p>
+<p>To do so, just copy your private key to your <code>~/.ssh</code> directory and call:</p>
 
 <p><code>
 $ ssh-add ~/.ssh/id_rsa
 </code></p>
 
-<p>whereas id_rsa is the name of your ssh key.</p>
+<p>whereas <code>id_rsa</code> is the name of your ssh key.</p>
 
-<p>Another reason why you fail, may be a missing .config file in your ~/.ssh folder.</p>
+<p>Another reason why you fail, may be a missing <code>.config</code> file in your <code>~/.ssh</code> folder.</p>
 
 <p>If this is the case, just create it and paste the following into it:</p>
 
