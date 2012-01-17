@@ -15,15 +15,15 @@ error.
 
 This may be the case if you have set up a new machine without having installed your existing ssh key properly.
 
-To do so, just copy your private key to your ~/.ssh directory and call:
+To do so, just copy your private key to your ```~/.ssh``` directory and call:
 
 ```
 $ ssh-add ~/.ssh/id_rsa
 ``` 
 
-whereas id_rsa is the name of your ssh key.
+whereas ```id_rsa``` is the name of your ssh key.
 
-Another reason why you fail, may be a missing .config file in your ~/.ssh folder.
+Another reason why you fail, may be a missing ```.config``` file in your ```~/.ssh``` folder.
 
 If this is the case, just create it and paste the following into it:
 

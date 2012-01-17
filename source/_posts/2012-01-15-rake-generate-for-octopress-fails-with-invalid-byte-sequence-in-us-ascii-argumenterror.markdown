@@ -26,13 +26,7 @@ Building site: source -> public
 	from /Users/alex/.rvm/gems/ruby-1.9.2-p290/bin/jekyll:19:in `<main>'
 ```
 
-when running 
-
-```
-rake generate
-```
-
-for octopress, add this to your .profile or .zshrc etc.
+when running ```rake generate``` for octopress, add this to your ```.profile``` or ```.zshrc``` etc.
 
 ```
 LANG=en_US.UTF-8
