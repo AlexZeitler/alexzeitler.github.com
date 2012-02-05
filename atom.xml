@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-02-05T20:33:55+01:00</updated>
+  <updated>2012-02-05T20:35:08+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -22,7 +22,7 @@
 
 <p>The following list shows you the tools I&#8217;ve found or that have been recommended to me (this list will be updated from time to time, so you can bookmark it ;-))</p>
 
-<h1>development</h1>
+<h2>development</h2>
 
 <ul>
 <li>Web Debugger (something Fiddler for Windows)
@@ -35,7 +35,7 @@
 </ul>
 
 
-<h1>editor</h1>
+<h2>editor</h2>
 
 <ul>
 <li><a href="http://www.jetbrains.com/webstorm/">WebStorm</a> (JavaScript, nodejs, Web Development in general)</li>
@@ -44,14 +44,14 @@
 </ul>
 
 
-<h1>launcher</h1>
+<h2>launcher</h2>
 
 <ul>
 <li><a href="http://www.alfredapp.com/">Alfred</a></li>
 </ul>
 
 
-<h1>productivity</h1>
+<h2>productivity</h2>
 
 <ul>
 <li><a href="dropbox.com">Dropbox</a></li>
@@ -59,14 +59,14 @@
 </ul>
 
 
-<h1>shell</h1>
+<h2>shell</h2>
 
 <ul>
 <li><a href="https://github.com/robbyrussell/oh-my-zsh">OH MY ZSH</a></li>
 </ul>
 
 
-<h1>usability</h1>
+<h2>usability</h2>
 
 <ul>
 <li><a href="http://code.google.com/p/shiftit/">Shift it</a> Windows 7 like Window docking (left/right etc.)</li>
