@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OSX | Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/blog/categories/osx/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-02-05T20:40:21+01:00</updated>
+  <updated>2012-02-05T20:44:35+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -37,6 +37,7 @@
 <ul>
 <li><a href="http://code.google.com/p/git-osx-installer/downloads/list?can=3">Git</a></li>
 <li><a href="http://gitx.frim.nl/">GitX</a></li>
+<li><a href="http://www.sourcegear.com/diffmerge/">DiffMerge</a></li>
 </ul>
 </li>
 </ul>
