@@ -4,7 +4,7 @@
   <title><![CDATA[Category: github | Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-02-07T22:51:12+01:00</updated>
+  <updated>2012-02-07T22:52:20+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -24,7 +24,7 @@
 git remote set-url origin git://github.com/AlexZeitler/node-hands-on.git
 </code></p>
 
-<p>The correct url is the GitHub url with read/write access:
+<p>The correct url is the GitHub url with read/write access (you get it if you click the SSH button):
 <img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/images/readwriteurl.png" alt="image" /></p>
 ]]></content>
   </entry>
