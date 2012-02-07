@@ -9,7 +9,8 @@
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="As I already told you, I&#8217;m pretty new to the OS X platform and I&#8217;m always looking for tools to get the daily work done. The following &hellip;">
+  <meta name="description" content="If git push origin master prompts for you UserName when &lt;origin&gt; is on GitHub, you may need to fix your origin url, e.g. 1
+git remote set-url &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +77,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/">git push prompts for UserName and Password on GitHub</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-07T22:33:00+01:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If <code>git push origin master</code> prompts for you UserName when <code>&lt;origin&gt;</code> is on GitHub, you may need to fix your <code>origin</code> url, e.g.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git remote set-url origin git://github.com/AlexZeitler/node-hands-on.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The correct url is the GitHub url with read/write access:
+<img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/images/readwriteurl.png" alt="image" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -443,6 +487,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/">git push prompts for UserName and Password on GitHub</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/02/05/my-os-x-findings/">My OS X findings</a>
       </li>
     
@@ -456,10 +504,6 @@
     
       <li class="post">
         <a href="/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/">Permission denied (publickey) when trying to access repository on GitHub</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/01/12/hello-from-a-new-world/">Hello (from a new) World</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2012-02-05T20:44:35+01:00</updated>
+  <updated>2012-02-07T22:51:12+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git push prompts for UserName and Password on GitHub]]></title>
+    <link href="http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/"/>
+    <updated>2012-02-07T22:33:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github</id>
+    <content type="html"><![CDATA[<p>If <code>git push origin master</code> prompts for you UserName when <code>&lt;origin&gt;</code> is on GitHub, you may need to fix your <code>origin</code> url, e.g.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git remote set-url origin git://github.com/AlexZeitler/node-hands-on.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The correct url is the GitHub url with read/write access:
+<img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/images/readwriteurl.png" alt="image" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My OS X findings]]></title>

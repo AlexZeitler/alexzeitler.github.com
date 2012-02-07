@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: ssh - Alex Zeitler</title>
+  <title>git push prompts for UserName and Password on GitHub - Alex Zeitler</title>
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="Category: ssh">
+  <meta name="description" content="If git push origin master prompts for you UserName when &lt;origin&gt; is on GitHub, you may need to fix your origin url, e.g. 1
+git remote set-url &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://AlexZeitler.comblog/categories/ssh">
+  <link rel="canonical" href="http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,36 +76,98 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: ssh</h1>
+    
+      <h1 class="entry-title">git push prompts for UserName and Password on GitHub</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-07T22:33:00+01:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>If <code>git push origin master</code> prompts for you UserName when <code>&lt;origin&gt;</code> is on GitHub, you may need to fix your <code>origin</code> url, e.g.</p>
 
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/">Permission denied (publickey) when trying to access repository on GitHub</a></h1>
-<time datetime="2012-01-13T18:10:00+01:00" pubdate><span class='month'>Jan</span> <span class='day'>13</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/ssh/'>ssh</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git remote set-url origin git://github.com/AlexZeitler/node-hands-on.git</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
-
+<p>The correct url is the GitHub url with read/write access:
+<img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/images/readwriteurl.png" alt="image" /></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Alex Zeitler</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-07T22:33:00+01:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/github/'>github</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/" data-via="AlexZeitler" data-counturl="http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/05/my-os-x-findings/" title="Previous Post: My OS X findings">&laquo; My OS X findings</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -205,7 +268,10 @@
       var disqus_shortname = 'AlexZeitler';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/';
+        var disqus_url = 'http://AlexZeitler.com/blog/2012/02/07/git-push-prompts-for-username-and-password-on-github/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
