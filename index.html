@@ -9,7 +9,8 @@
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="If you need to convert .svg files to .png, there&#8217;s a handy command line tool that comes with OS X: qlmanage. To convert my.svg file to my.png &hellip;">
+  <meta name="description" content="During development, you&#8217;re constantly changing your source files. Normally that would require you to call something like 1
+$ node server.js &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +77,62 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes/">Restarting node.js server automatically when source code changes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T23:46:00+01:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>During development, you&#8217;re constantly changing your source files. Normally that would require you to call something like</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ node server.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>everytime you change your on of your source files.</p>
+
+<p>A simple workaround is to</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo npm install supervisor -g</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now you run</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ supervisor server.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Only once and everytime your source code changes, your development server gets restarted by supervisor automatically.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -538,6 +595,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes/">Restarting node.js server automatically when source code changes</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/01/21/convert-svg-to-png-on-os-x/">Convert SVG to PNG on OS X</a>
       </li>
     
@@ -551,10 +612,6 @@
     
       <li class="post">
         <a href="/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/">rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError) </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/">This application requires a version of Adobe AIR which cannot be found</a>
       </li>
     
   </ul>

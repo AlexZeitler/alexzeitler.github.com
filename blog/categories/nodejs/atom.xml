@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: nodejs | Alex Zeitler]]></title>
+  <link href="http://AlexZeitler.com/blog/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://AlexZeitler.com/"/>
+  <updated>2013-01-21T23:54:08+01:00</updated>
+  <id>http://AlexZeitler.com/</id>
+  <author>
+    <name><![CDATA[Alex Zeitler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Restarting node.js server automatically when source code changes]]></title>
+    <link href="http://AlexZeitler.com/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes/"/>
+    <updated>2013-01-21T23:46:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes</id>
+    <content type="html"><![CDATA[<p>During development, you're constantly changing your source files. Normally that would require you to call something like</p>
+
+<p><code>
+$ node server.js
+</code>
+everytime you change your on of your source files.</p>
+
+<p>A simple workaround is to
+<code>
+$ sudo npm install supervisor -g
+</code>
+Now you run
+<code>
+$ supervisor server.js
+</code>
+Only once and everytime your source code changes, your development server gets restarted by supervisor automatically.</p>
+]]></content>
+  </entry>
+  
+</feed>
