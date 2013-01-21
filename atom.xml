@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Zeitler]]></title>
   <link href="http://AlexZeitler.com/atom.xml" rel="self"/>
   <link href="http://AlexZeitler.com/"/>
-  <updated>2013-01-21T23:24:05+01:00</updated>
+  <updated>2013-01-21T23:29:28+01:00</updated>
   <id>http://AlexZeitler.com/</id>
   <author>
     <name><![CDATA[Alex Zeitler]]></name>
@@ -45,7 +45,7 @@
 
 <ul>
 <li><a href="http://www.charlesproxy.com/">Charles</a></li>
-<li><a href="hurl.it">hurl.it</a></li>
+<li><a href="http://hurl.it">hurl.it</a></li>
 </ul>
 </li>
 <li>SCM
