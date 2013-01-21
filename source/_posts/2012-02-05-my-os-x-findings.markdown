@@ -12,7 +12,7 @@ The following list shows you the tools I've found or that have been recommended 
 ###development
 * Web Debugger (something Fiddler for Windows)
 	* [Charles](http://www.charlesproxy.com/)
-	* [hurl.it](hurl.it)
+	* [hurl.it](http://hurl.it)
 * SCM
 	* [Git](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
 	* [GitX](http://gitx.frim.nl/)
@@ -25,6 +25,10 @@ The following list shows you the tools I've found or that have been recommended 
 
 ###launcher
 * [Alfred](http://www.alfredapp.com/)
+
+###MongoDb
+* [MongoHub](http://mongohub.todayclose.com/) A MongoDb GUI for OS X
+
 
 ###productivity
 * [Dropbox](dropbox.com)
