@@ -9,8 +9,7 @@
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="During development, you&#8217;re constantly changing your source files. Normally that would require you to call something like 1
-$ node server.js &hellip;">
+  <meta name="description" content="If your OS background is Windows, you&#8217;re used to use CTRL+TAB to switch between the Windows inside an application. In OS X this doesn&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +76,67 @@ $ node server.js &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/">Ctrl+Tab to switch between Windows in OS X Application</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-22T20:44:00+01:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If your OS background is Windows, you&#8217;re used to use CTRL+TAB to switch between the Windows inside an application. In OS X this doesn&#8217;t work and some people even suggest to buy third party tools. But there&#8217;s a simple solution inside the OS X Keyboard settings:</p>
+
+<ul>
+<li>Open Keyboard settings</li>
+<li>Select &#8220;Keyboard &amp; Text Input&#8221;</li>
+<li>Find &#8220;Move focus to next window&#8221;</li>
+<li>Double click the current keyboard shortcut</li>
+<li>Change it by hitting CTRL+TAB on your keyboard</li>
+</ul>
+
+
+<p><img src="/images/ctrltabonosx.png" alt="image" /></p>
+
+<p>Btw: CTRL+TAB doesn&#8217;t work in Sublime. You have to edit your .sublime-keymap (SHIFT+CMD+P -> &#8220;Key Bindings - User&#8221;) and paste this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[
+</span><span class='line'>   { "keys": ["ctrl+tab"], "command": "next_view" },
+</span><span class='line'>   { "keys": ["ctrl+shift+tab"], "command": "prev_view" }
+</span><span class='line'>]</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -595,6 +655,10 @@ $ node server.js &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/">Ctrl+Tab to switch between Windows in OS X Application</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes/">Restarting node.js server automatically when source code changes</a>
       </li>
     
@@ -608,10 +672,6 @@ $ node server.js &hellip;">
     
       <li class="post">
         <a href="/blog/2012/02/05/my-os-x-findings/">My OS X findings</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/">rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError) </a>
       </li>
     
   </ul>

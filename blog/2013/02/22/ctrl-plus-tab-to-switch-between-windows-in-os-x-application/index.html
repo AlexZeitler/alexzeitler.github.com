@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>This application requires a version of Adobe AIR which cannot be found - Alex Zeitler</title>
+  <title>Ctrl+Tab to switch between Windows in OS X Application - Alex Zeitler</title>
   <meta name="author" content="Alex Zeitler">
 
   
-  <meta name="description" content="If you&#8217;re receiving this message, when trying to install Adobe Air on OS X: You&#8217;ll need to disable automatic graphics switching in the &hellip;">
+  <meta name="description" content="If your OS background is Windows, you&#8217;re used to use CTRL+TAB to switch between the Windows inside an application. In OS X this doesn&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found">
+  <link rel="canonical" href="http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">This application requires a version of Adobe AIR which cannot be found</h1>
+      <h1 class="entry-title">Ctrl+Tab to switch between Windows in OS X Application</h1>
     
     
       <p class="meta">
@@ -95,22 +95,39 @@
   
 
 
-<time datetime="2012-01-15T22:57:00+01:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
+<time datetime="2013-02-22T20:44:00+01:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>If you&#8217;re receiving this message, when trying to install Adobe Air on OS X:</p>
+<div class="entry-content"><p>If your OS background is Windows, you&#8217;re used to use CTRL+TAB to switch between the Windows inside an application. In OS X this doesn&#8217;t work and some people even suggest to buy third party tools. But there&#8217;s a simple solution inside the OS X Keyboard settings:</p>
 
-<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/applicationrequiresaversionofadobeair.png" alt="image" /></p>
+<ul>
+<li>Open Keyboard settings</li>
+<li>Select &#8220;Keyboard &amp; Text Input&#8221;</li>
+<li>Find &#8220;Move focus to next window&#8221;</li>
+<li>Double click the current keyboard shortcut</li>
+<li>Change it by hitting CTRL+TAB on your keyboard</li>
+</ul>
 
-<p>You&#8217;ll need to disable automatic graphics switching in the Energy Saver settings:</p>
 
-<p><img src="https://github.com/AlexZeitler/alexzeitler.github.com/raw/source/source/images/automaticgraphicsswitchingoff.png" alt="image" /></p>
+<p><img src="/images/ctrltabonosx.png" alt="image" /></p>
 
-<p>If you experience problems with an Air based application (like Balsamiq Mockups) during runtime, you should try this also…</p>
+<p>Btw: CTRL+TAB doesn&#8217;t work in Sublime. You have to edit your .sublime-keymap (SHIFT+CMD+P -> &#8220;Key Bindings - User&#8221;) and paste this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[
+</span><span class='line'>   { "keys": ["ctrl+tab"], "command": "next_view" },
+</span><span class='line'>   { "keys": ["ctrl+shift+tab"], "command": "prev_view" }
+</span><span class='line'>]</span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
 
 
@@ -133,12 +150,12 @@
   
 
 
-<time datetime="2012-01-15T22:57:00+01:00" pubdate data-updated="true">Jan 15<span>th</span>, 2012</time>
+<time datetime="2013-02-22T20:44:00+01:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/air/'>air</a>, <a class='category' href='/blog/categories/osx/'>osx</a>
+    <a class='category' href='/blog/categories/keyboard/'>KEYBOARD</a>, <a class='category' href='/blog/categories/osx-/'>OSX,</a>
   
 </span>
 
@@ -147,7 +164,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/" data-via="AlexZeitler" data-counturl="http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/" data-via="AlexZeitler" data-counturl="http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/" >Tweet</a>
   
   
   
@@ -156,10 +173,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/01/13/permission-denied-publickey-when-trying-to-access-repository-on-github/" title="Previous Post: Permission denied (publickey) when trying to access repository on GitHub">&laquo; Permission denied (publickey) when trying to access repository on GitHub</a>
+        <a class="basic-alignment left" href="/blog/2013/01/21/restarting-node-dot-js-server-automatically-when-source-code-changes/" title="Previous Post: Restarting node.js server automatically when source code changes">&laquo; Restarting node.js server automatically when source code changes</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/01/15/rake-generate-for-octopress-fails-with-invalid-byte-sequence-in-us-ascii-argumenterror/" title="next Post: rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError) ">rake generate for octopress fails with invalid byte sequence in US-ASCII (ArgumentError)  &raquo;</a>
       
     </p>
   </footer>
@@ -271,8 +286,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/';
-        var disqus_url = 'http://AlexZeitler.com/blog/2012/01/15/this-application-requires-a-version-of-adobe-air-which-cannot-be-found/';
+        var disqus_identifier = 'http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/';
+        var disqus_url = 'http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/';
         var disqus_script = 'embed.js';
       
     (function () {

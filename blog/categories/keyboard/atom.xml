@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: KEYBOARD | Alex Zeitler]]></title>
+  <link href="http://AlexZeitler.com/blog/categories/keyboard/atom.xml" rel="self"/>
+  <link href="http://AlexZeitler.com/"/>
+  <updated>2013-02-22T21:15:04+01:00</updated>
+  <id>http://AlexZeitler.com/</id>
+  <author>
+    <name><![CDATA[Alex Zeitler]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ctrl+Tab to switch between Windows in OS X Application]]></title>
+    <link href="http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application/"/>
+    <updated>2013-02-22T20:44:00+01:00</updated>
+    <id>http://AlexZeitler.com/blog/2013/02/22/ctrl-plus-tab-to-switch-between-windows-in-os-x-application</id>
+    <content type="html"><![CDATA[<p>If your OS background is Windows, you're used to use CTRL+TAB to switch between the Windows inside an application. In OS X this doesn't work and some people even suggest to buy third party tools. But there's a simple solution inside the OS X Keyboard settings:</p>
+
+<ul>
+<li>Open Keyboard settings</li>
+<li>Select "Keyboard &amp; Text Input"</li>
+<li>Find "Move focus to next window"</li>
+<li>Double click the current keyboard shortcut</li>
+<li>Change it by hitting CTRL+TAB on your keyboard</li>
+</ul>
+
+
+<p><img src="/images/ctrltabonosx.png" alt="image" /></p>
+
+<p>Btw: CTRL+TAB doesn't work in Sublime. You have to edit your .sublime-keymap (SHIFT+CMD+P -> "Key Bindings - User") and paste this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[
+</span><span class='line'>   { "keys": ["ctrl+tab"], "command": "next_view" },
+</span><span class='line'>   { "keys": ["ctrl+shift+tab"], "command": "prev_view" }
+</span><span class='line'>]</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>
